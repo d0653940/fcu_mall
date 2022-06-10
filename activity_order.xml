@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Meal">
+    android:orientation="vertical"
+    tools:context=".Order0">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav"
@@ -18,11 +19,10 @@
         app:itemHorizontalTranslationEnabled="false"
         app:menu="@menu/nav" />
 
-    <GridView
+    <ListView
+        android:id="@+id/lvShow"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/gridview"
-        android:numColumns="2">
-    </GridView>
+        android:layout_height="match_parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
